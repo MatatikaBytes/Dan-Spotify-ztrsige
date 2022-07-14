@@ -5,6 +5,9 @@ plugins:
   extractors:
   - name: tap-spotify
     pip_url: git+https://github.com/Matatika/tap-spotify@v0.3.0
+  - name: tap-google-sheets
+    variant: meltano
+    pip_url: git+https://github.com/Matatika/tap-google-sheets@v0.2.0
   loaders:
   - name: target-postgres--transferwise
     variant: transferwise
@@ -21,3 +24,5 @@ plugins:
     pip_url: git+https://github.com/Matatika/files-dbt@v0.20.x.1
   - name: analyze-spotify
     pip_url: git+https://github.com/Matatika/analyze-spotify@v0.4.0
+  - name: files-dbt
+    pip_url: git+https://github.com/Matatika/files-dbt@v1.0.x.0
