@@ -255,6 +255,21 @@ extractors:
     label: Meltano_database_uri
     protected: false
     required: 'true'
+- name: tap-example-custom-data-source
+  namespace: tap_example_custom_data_source
+  hidden: false
+  label: Tap Example Custom Data Source
+  pip_url: git+https://github.com/ets/tap-spreadsheets-anywhere.git
+  executable: tap-spreadsheets-anywhere
+  capabilities:
+  - state
+  - catalog
+  - discover
+  settings:
+  - name: tables
+    kind: array
+    label: Tables
+    protected: false
 - name: tap-spotify
   namespace: tap_spotify
   hidden: false
@@ -1356,6 +1371,13 @@ files:
     analyze/datasets/tap-matatika-sit/user-genders.yml: 'true'
   repo: https://github.com/Matatika/analyze-sit
   pip_url: git+https://github.com/Matatika/analyze-sit.git
+- name: analyze-example-custom-data-source
+  namespace: tap_example_custom_data_source
+  hidden: false
+  label: Analyze Example Custom Data Source
+  update:
+    analyze/datasets/tap-example-custom-data-source: 'true'
+  pip_url: git+https://github.com/Matatika/analyze-example-custom-data-source.git
 - name: analyze-googleads
   namespace: tap_googleads
   hidden: false
