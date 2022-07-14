@@ -8,6 +8,8 @@ plugins:
   - name: tap-google-sheets
     variant: meltano
     pip_url: git+https://github.com/Matatika/tap-google-sheets@v0.2.0
+  - name: tap-example-custom-data-source
+    pip_url: git+https://github.com/ets/tap-spreadsheets-anywhere.git
   loaders:
   - name: target-postgres--transferwise
     variant: transferwise
@@ -26,3 +28,5 @@ plugins:
     pip_url: git+https://github.com/Matatika/analyze-spotify@v0.4.0
   - name: files-dbt
     pip_url: git+https://github.com/Matatika/files-dbt@v1.0.x.0
+  - name: analyze-example-custom-data-source
+    pip_url: git+https://github.com/Matatika/analyze-example-custom-data-source.git
