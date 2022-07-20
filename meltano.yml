@@ -22,8 +22,6 @@ plugins:
   - name: dbt
     pip_url: dbt==0.20.2
   files:
-  - name: dbt
-    pip_url: git+https://github.com/Matatika/files-dbt@v0.20.x.1
   - name: analyze-spotify
     pip_url: git+https://github.com/Matatika/analyze-spotify@v0.4.0
   - name: files-dbt
