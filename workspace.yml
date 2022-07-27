@@ -1,5 +1,5 @@
 version: workspaces/v0.1
-name: newworkspacename
+name: Dan Spotify
 dataset_paths:
   - analyze/datasets
   - .meltano/analyze/datasets
